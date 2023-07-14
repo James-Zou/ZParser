@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,11 +24,11 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 正弦函数
  * 表示正弦波形的函数。它的图像是一条波浪形曲线，周期为2π，幅度在-1到1之间变化。
  * sin函数的数学表达式为：y = sin(x)，其中x为自变量，y为因变量，表示在弧度为x的角度处的正弦值。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class SinFunction extends BaseFunction {
 	@Override

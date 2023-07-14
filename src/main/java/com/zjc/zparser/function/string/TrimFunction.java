@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,9 +21,9 @@ import com.zjc.zparser.enums.StringFunctionTypeEnum;
 import com.zjc.zparser.function.*;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 用于去除字符串两端的空格
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class TrimFunction extends BaseFunction {
 	@Override

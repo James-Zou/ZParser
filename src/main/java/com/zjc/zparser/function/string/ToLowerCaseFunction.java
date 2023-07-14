@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,9 +22,9 @@ import com.zjc.zparser.enums.StringFunctionTypeEnum;
 import com.zjc.zparser.function.*;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 将字符串中的所有字母转换为小写字母
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class ToLowerCaseFunction extends BaseFunction {
 	@Override

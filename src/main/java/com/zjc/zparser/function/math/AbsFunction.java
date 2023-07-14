@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,11 +25,11 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 绝对值函数
  * 	用于返回一个数字的绝对值。
  * 	如果输入的是一个正数，则返回该数本身；如果输入的是一个负数，则返回该数的相反数
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class AbsFunction extends BaseFunction {
 	@Override

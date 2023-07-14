@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,13 +24,13 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 对数函数
  * 它是以对数为基础的函数。log函数的作用是将一个数值转换成一个对数值。
  * 它通常被用来解决指数方程和指数函数的问题。在计算机科学中，log函数通常用于对数时间复杂度的计算。
  * log函数的一般形式为：log(a,b)，其中a是对数的底数，b是要求对数的数值。
  * log函数的计算结果是以a为底的b的对数值。例如，log2(8)的结果是3，因为2的3次幂等于8。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class LogFunction extends BaseFunction {
 	@Override

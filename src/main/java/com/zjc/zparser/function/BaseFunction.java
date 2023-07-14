@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@ package com.zjc.zparser.function;
 import com.zjc.zparser.actuator.ExecutionCenter;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description:
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public abstract class BaseFunction {
 

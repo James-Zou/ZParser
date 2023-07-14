@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import com.zjc.zparser.function.*;
 
 import java.util.ArrayList;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 用于从一个字符串中提取指定长度的子字符串
  * 它需要三个参数：原字符串、起始位置和子字符串长度。起始位置是从0开始的。
  *
@@ -34,7 +34,7 @@ import java.util.ArrayList;
  * var substring = str.substring(6, 5);
  * console.log(substring); // 输出 "World"
  * ```
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class SubstringFunction extends BaseFunction {
 	@Override

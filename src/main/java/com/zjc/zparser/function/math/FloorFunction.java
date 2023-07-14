@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,12 +24,12 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: floor函数
  *	用于将输入值向下取整为最接近且小于等于该值的整数。
  *	例如，floor(3.7)将返回3，floor(-2.4)将返回-3。
  *	在计算机语言中，通常使用floor函数来处理浮点数的舍入错误或将数值截断为整数。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class FloorFunction extends BaseFunction {
 	@Override

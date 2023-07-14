@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,12 +24,12 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 指数函数
  * 通常用于计算e的幂次方。在数学中，e是一个重要的常数，
  * 其值约为2.71828。exp函数的数学表达式为：exp(x) = e^x，
  * 其中x是指数。exp函数接受一个参数x，返回e的x次方的值。例如，exp(1)的值为e，exp(2)的值为e的平方。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class ExpFunction extends BaseFunction {
 	@Override

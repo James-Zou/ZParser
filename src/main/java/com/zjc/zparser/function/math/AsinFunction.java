@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,12 +25,12 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 反正弦函数
  * 也称为反正弦双曲函数。它是一个三角函数的逆函数，
  * 用来求出一个角度的正弦值等于给定的值。其定义域为[-1,1]，值域为[-π/2,π/2]，表示为：
  * y = asin(x)
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class AsinFunction extends BaseFunction {
 

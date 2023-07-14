@@ -1,10 +1,25 @@
+/*
+ * Copyright 2023 James Zou.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 import com.zjc.zparser.actuator.ExecutionException;
 import com.zjc.zparser.actuator.ExecutionCenter;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description:
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class Test {
 
@@ -37,6 +52,27 @@ public class Test {
             System.out.println(eval.execute("CONTAIN('Bob is a boy','2','boy')"));
             System.out.println(eval.execute("IFBLANK('Bob is a boy','2')"));
             System.out.println(eval.execute("OR(1!=1,2>3)"));
+            System.out.println(eval.execute("NEXTDAY()"));
+            System.out.println(eval.execute("NEXTDAYTIME()"));
+            System.out.println(eval.execute("CURRENTDAY()"));
+            System.out.println(eval.execute("CURRENTDAYTIME()"));
+            System.out.println(eval.execute("GETDAY(-2)"));
+            System.out.println(eval.execute("GETDAYTIME(-2)"));
+            System.out.println(eval.execute("TIMEMILLIS(-2)"));
+            System.out.println(eval.execute("CURRENTWEEK()"));
+            System.out.println(eval.execute("WEEK(1)"));
+            System.out.println(eval.execute("SEASONSTARTDATE('2023-07-08 15:11:01')"));
+            System.out.println(eval.execute("SEASONENDDATE('2023-07-08 15:11:01')"));
+            System.out.println(eval.execute("MONTHSTARTDATE()"));
+            System.out.println(eval.execute("MONTHENDDATE()"));
+            System.out.println(eval.execute("DAY('2023-07-30',-1)"));
+            System.out.println(eval.execute("DAY(CURRENTDAY(),1)"));
+            System.out.println(eval.execute("DAYMILLIS(CURRENTDAYTIME(),1)"));
+            System.out.println(eval.execute("DAYM(1689042334000,1)"));
+            System.out.println(eval.execute("DAYMILLISM(1689042334000,1)"));
+            System.out.println(eval.execute("DAYS('2023-07-08','2023-07-10')"));
+            System.out.println(eval.execute("DAYMS('2023-07-08  15:11:01','2023-07-10  05:11:01')"));
+            System.out.println(eval.execute("DAYTS(1689042334000,1689387934000)"));
             //算式一：$(总得分字段编码)=SUM($(变更影响字段编码)*0.20,$(服务不可用字段编码)*0.35,$(成功率字段编码)*0.25,$(回退时间字段编码)*0.10,$(复杂程度字段编码)*0.10)
             //
             //算式二：$(变更类型字段编码)=IF($(总得分字段编码)<=2,"一般变更"，"重大变更")
