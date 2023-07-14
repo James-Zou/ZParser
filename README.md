@@ -1,11 +1,14 @@
 # ZParser
-公式计算服务
+## 公式计算服务
 
-对外提供日期函数、逻辑函数、文本函数、数字函数等公式计算能力
+## 对外提供日期函数、逻辑函数、文本函数、数字函数等公式计算能力
+
+## 调度方式
+ExecutionCenter eval = ExecutionCenter.getInstance();
+eval.getNumberResult("2*3-5/(3-1)+9-1*22+222-22");
 
 
-
-日期函数  NEXTDAY()
+## 日期函数  NEXTDAY()
 NEXTDAY()
 获取下一天
 返回值根据接收字段区别：若接收字段为文本字段，则返回文本；若接收字段为日期字段，则返回日期
