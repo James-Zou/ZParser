@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@ import com.zjc.zparser.function.*;
 
 import java.util.ArrayList;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description:·用于获取字符串中指定位置的字符
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class CharAtFunction extends BaseFunction {
 	@Override

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,11 +24,11 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 平方根函数
  * 在数学中，平方根是一个数的平方等于另一个数的操作的逆运算。
  * 例如，2的平方根是1.41421356，因为1.41421356的平方是2。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class SqrtFunction extends BaseFunction {
 	@Override

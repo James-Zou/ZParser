@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,13 +24,13 @@ import com.zjc.zparser.function.*;
 
 import java.util.ArrayList;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 反正切值函数
  * 它返回两个参数的反正切值。它通常用于计算极角，即从x轴到给定点的角度。
  * 该函数可以计算所有四个象限的角度，而不仅仅是第一象限。它的定义如下：
  *
  * atan2(y,x) = atan(y/x)
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class Atan2Function extends BaseFunction {
 	@Override

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@ import com.zjc.zparser.function.*;
 
 import java.util.ArrayList;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 用于在字符串中搜索一个指定的子字符串，并返回它在字符串中最后一次出现的位置。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class LastIndexOfFunction extends BaseFunction {
 	@Override

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,9 +24,9 @@ import com.zjc.zparser.function.*;
 
 import java.util.ArrayList;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 求最大值函数
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class MaxFunction extends BaseFunction {
 	@Override

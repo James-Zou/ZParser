@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import com.zjc.zparser.function.*;
 
 import java.util.ArrayList;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 用于在字符串中查找指定的子字符串
  *
  * @date 6/8/23 3:50 PM

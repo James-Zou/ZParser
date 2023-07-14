@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,13 +23,13 @@ import com.zjc.zparser.function.*;
 
 import java.util.ArrayList;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 比较两个对象之间的大小
  * 它返回一个整数值，表示两个对象的大小关系。
  * 如果第一个对象比第二个对象小，则返回一个小于0的值；
  * 如果第一个对象比第二个对象大，则返回一个大于0的值；
  * 如果两个对象相等，则返回0。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class CompareToFunction extends BaseFunction {
 	@Override

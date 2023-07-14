@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,11 +24,11 @@ import com.zjc.zparser.function.FunctionException;
 import com.zjc.zparser.function.FunctionResult;
 
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description: 余弦函数
  * 表示一个角的余弦值。在直角三角形中，cos函数定义为斜边与直角边之间的比值。
  * cos函数是偶函数，其定义域为实数集，值域为[-1,1]。
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class CosFunction extends BaseFunction {
 	@Override

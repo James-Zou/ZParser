@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Roderick Zou.
+ * Copyright 2023 James Zou.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,9 +24,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 /**
- * @author roderick.zou
+ * @author James.Zou
  * @Description:
- * @date 6/8/23 3:50 PM
+ * @date 6/6/23 3:50 PM
  */
 public class MathFunctions implements FunctionGroup {
 	private List functions = new ArrayList();
