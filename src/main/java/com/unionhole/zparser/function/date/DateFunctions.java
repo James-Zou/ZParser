@@ -48,6 +48,7 @@ public class DateFunctions implements FunctionGroup {
 		functions.add(new DAYFunction());
 		functions.add(new DAYMILLISFunction());
 		functions.add(new DAYMILLISMFunction());
+		functions.add(new DAYMILLISMPFunction());
 		functions.add(new DAYMFunction());
 		functions.add(new DAYSFunction());
 		functions.add(new DAYMSFunction());

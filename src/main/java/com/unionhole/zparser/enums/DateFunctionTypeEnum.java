@@ -36,6 +36,7 @@ public enum DateFunctionTypeEnum {
     CURRENTDAY_FUNCTION("CURRENTDAY"),//获取当天函数
     DAYMILLIS_FUNCTION("DAYMILLIS"),//根据指定日期获取日期时分秒
     DAYMILLISM_FUNCTION("DAYMILLISM"),//根据指定日期时间戳获取日期时分秒
+    DAYMILLISMP_FUNCTION("DAYMILLISMP"),//根据指定日期时间戳获取日期时分秒,根据指定单位换算
     DAYM_FUNCTION("DAYM"),//根据指定日期时间戳获取日期
     DAY_FUNCTION("DAY"),//根据指定日期获取日期
     DAYS_FUNCTION("DAYS"),//获取两个时间的差值

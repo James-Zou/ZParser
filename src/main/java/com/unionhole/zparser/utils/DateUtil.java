@@ -129,6 +129,15 @@ public class DateUtil {
         return sdf.format(new Date(cur+dayh));
     }
 
+    /**
+     *获取指定天 根据指定毫秒数
+     * @return
+     */
+    public  static String getDayMillisByMills(long date,long mills) throws ParseException {
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        long cur=date;
+        return sdf.format(new Date(cur+mills));
+    }
 
     /**
      *获取指定天的时间戳
