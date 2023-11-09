@@ -6,7 +6,7 @@
 
     <groupId>com.unionhole</groupId>
     <artifactId>ZParser</artifactId>
-    <version>0.3.1</version>
+    <version>0.3.2</version>
     <name>ZParser</name>
     <url>https://github.com/James-Zou/ZParser</url>
     <description>ZParser is a formula parsing service with built-in formula computing capabilities such as date functions, logic functions, text functions, and number functions, based on the Apache 2.0 open source protocol.</description>
