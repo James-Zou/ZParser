@@ -319,5 +319,31 @@ public class DateUtil {
         return day;
     }
 
+    /**
+     *获取两个时间戳的差值 ,指定单位
+     * @return
+     */
+    public  static long getDaysByUnit(long date1,long date2,String unit,int isUpper) {
+        long dateValue=date2-date1;
+        long number=1L;
+        long result=0L;
+        switch (unit){
+            case "D": number=24*60*60*1000; break; //单位是天
+            case "H": number=60*60*1000; break;//单位是小时
+            case "M": number=60*1000; break;//单位是分钟
+            case "S": number=1000; break;//单位是秒
+            case "MI": number=1; break;//单位是毫秒
+        }
+        if(isUpper==0){
+            result=dateValue/number;
+        }else {
+            double oldResult = (double) dateValue/number;
+            result= (long) Math.ceil(oldResult);
+        }
+
+
+        return result;
+    }
+
 
 }

@@ -53,6 +53,7 @@ public class DateFunctions implements FunctionGroup {
 		functions.add(new DAYSFunction());
 		functions.add(new DAYMSFunction());
 		functions.add(new DAYTSFunction());
+		functions.add(new DAYTSPFunction());
 	}
 
 	@Override
