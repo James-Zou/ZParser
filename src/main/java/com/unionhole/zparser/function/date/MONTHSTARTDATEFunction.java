@@ -44,7 +44,11 @@ public class MONTHSTARTDATEFunction extends BaseFunction {
 
 
         try {
-            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+            ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                    new SimpleDateFormat("yyyy-MM-dd"));
+            SimpleDateFormat sdf = threadLocalFormat.get();
+
+//            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
             result = DateUtil.getMonthStartDay();
         } catch (Exception e) {
             throw new FunctionException(exceptionMessage, e);

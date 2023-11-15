@@ -55,7 +55,11 @@ public class DAYSFunction extends BaseFunction {
             String argumentTwo = FunctionHelper.trimAndRemoveQuoteChars(
                     (String) values.get(1), executionCenter.getQuoteCharacter());
 
-            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+            ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                    new SimpleDateFormat("yyyy-MM-dd"));
+            SimpleDateFormat sdf = threadLocalFormat.get();
+
+//            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 
             result = String.valueOf(DateUtil.getDays(sdf.parse(argumentOne),sdf.parse(argumentTwo)));
         } catch (Exception e) {

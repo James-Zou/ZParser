@@ -6,7 +6,7 @@
 
     <groupId>com.unionhole</groupId>
     <artifactId>ZParser</artifactId>
-    <version>0.3.2</version>
+    <version>0.3.3</version>
     <name>ZParser</name>
     <url>https://github.com/James-Zou/ZParser</url>
     <description>ZParser is a formula parsing service with built-in formula computing capabilities such as date functions, logic functions, text functions, and number functions, based on the Apache 2.0 open source protocol.</description>
@@ -40,8 +40,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>7</source>
-                    <target>7</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
             <plugin>

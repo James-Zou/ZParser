@@ -29,7 +29,10 @@ public class DateUtil {
     public  static String getNextDay() {
         long cur=System.currentTimeMillis();
         long dayh=(long)24*60*60*1000; //一天的毫秒数
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(new Date(cur+dayh));
     }
 
@@ -40,7 +43,10 @@ public class DateUtil {
     public  static String getNextDayMillis() {
         long cur=System.currentTimeMillis();
         long dayh=(long)24*60*60*1000; //一天的毫秒数
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return sdf.format(new Date(cur+dayh));
     }
 
@@ -50,7 +56,10 @@ public class DateUtil {
      */
     public static String getCurrentDay() {
         long cur=System.currentTimeMillis();
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(new Date(cur));
     }
 
@@ -60,7 +69,10 @@ public class DateUtil {
      */
     public static String getCurrentDayMillis() {
         long cur=System.currentTimeMillis();
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return sdf.format(new Date(cur));
     }
 
@@ -71,7 +83,10 @@ public class DateUtil {
     public  static String getDay(int day) {
         long cur=System.currentTimeMillis();
         long dayh=(long)24*60*60*1000*day; //一天的毫秒数
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(new Date(cur+dayh));
     }
 
@@ -80,7 +95,10 @@ public class DateUtil {
      * @return
      */
     public  static String getDayByDate(String date, int day) throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         long cur=sdf.parse(date).getTime();
         long dayh=(long)24*60*60*1000*day; //一天的毫秒数
         return sdf.format(new Date(cur+dayh));
@@ -91,7 +109,10 @@ public class DateUtil {
      * @return
      */
     public  static String getDayByDate(long date,int day) throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         long cur=date;
         long dayh=(long)24*60*60*1000*day; //一天的毫秒数
         return sdf.format(new Date(cur+dayh));
@@ -104,7 +125,10 @@ public class DateUtil {
     public  static String getDayMillis(int day) {
         long cur=System.currentTimeMillis();
         long dayh=(long)24*60*60*1000*day; //一天的毫秒数
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return sdf.format(new Date(cur+dayh));
     }
     /**
@@ -112,7 +136,10 @@ public class DateUtil {
      * @return
      */
     public  static String getDayMillisByDate(String date,int day) throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         long cur=sdf.parse(date).getTime();
         long dayh=(long)24*60*60*1000*day; //一天的毫秒数
         return sdf.format(new Date(cur+dayh));
@@ -123,7 +150,10 @@ public class DateUtil {
      * @return
      */
     public  static String getDayMillisByDate(long date,int day) throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         long cur=date;
         long dayh=(long)24*60*60*1000*day; //一天的毫秒数
         return sdf.format(new Date(cur+dayh));
@@ -134,7 +164,10 @@ public class DateUtil {
      * @return
      */
     public  static String getDayMillisByMills(long date,long mills) throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         long cur=date;
         return sdf.format(new Date(cur+mills));
     }
@@ -156,7 +189,10 @@ public class DateUtil {
      * @throws Exception
      */
     public static long getTimeMillisFormat(int day,String mills) throws Exception {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date=sdf.parse(getDay(day)+" "+mills);
         long time=date.getTime();
         return time;
@@ -170,7 +206,10 @@ public class DateUtil {
      */
     public static String getWeek() throws Exception {
         Date date=new Date();
-        SimpleDateFormat sdf=new SimpleDateFormat("EEEE");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("EEEE"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("EEEE");
         return sdf.format(date);
 
     }
@@ -183,7 +222,10 @@ public class DateUtil {
     public static String getWeekByDay(int day) throws Exception {
         long cur=System.currentTimeMillis();
         long dayh=(long)24*60*60*1000*day; //一天的毫秒数
-        SimpleDateFormat sdf=new SimpleDateFormat("EEEE");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("EEEE"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("EEEE");
         return sdf.format(new Date(cur+dayh));
     }
 
@@ -200,7 +242,10 @@ public class DateUtil {
         int month = calendar.get(Calendar.MONTH);
         calendar.set(Calendar.MONTH, month / 3 * 3);
         calendar.set(Calendar.DATE, 1);
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(calendar.getTime());
     }
 
@@ -214,7 +259,10 @@ public class DateUtil {
         int month = calendar.get(Calendar.MONTH);
         calendar.set(Calendar.MONTH, (month + 3) / 3 * 3);
         calendar.set(Calendar.DATE, 1);
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(new Date(calendar.getTime().getTime() - 24 * 60 * 60 *1000));
     }
 
@@ -227,7 +275,10 @@ public class DateUtil {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         calendar.add(Calendar.MONTH,-1);
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(calendar.getTime());
     }
 
@@ -240,7 +291,10 @@ public class DateUtil {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         calendar.add(Calendar.MONTH,amount);
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(calendar.getTime());
     }
 
@@ -249,7 +303,10 @@ public class DateUtil {
      * @return
      */
     public static String getMonthStartDay () {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat format = threadLocalFormat.get();
+//        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Calendar cale =  Calendar.getInstance();
         cale.add(Calendar.MONTH, 0);
         cale.set(Calendar.DAY_OF_MONTH, 1);
@@ -261,7 +318,10 @@ public class DateUtil {
      * @return
      */
     public static String getMonthEndDay () {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat format = threadLocalFormat.get();
+//        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Calendar cale =  Calendar.getInstance();
         cale.add(Calendar.MONTH, 1);
         cale.set(Calendar.DAY_OF_MONTH, 0);
@@ -274,7 +334,10 @@ public class DateUtil {
      * @return
      */
     public  static String getDayTimeByMillis(long date) {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return sdf.format(new Date(date));
     }
 
@@ -283,7 +346,10 @@ public class DateUtil {
      * @return
      */
     public  static String getDayByMillis(long date) {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                new SimpleDateFormat("yyyy-MM-dd"));
+        SimpleDateFormat sdf = threadLocalFormat.get();
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(new Date(date));
     }
 

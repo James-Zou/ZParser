@@ -55,7 +55,11 @@ public class DAYMSFunction extends BaseFunction {
             String argumentTwo = FunctionHelper.trimAndRemoveQuoteChars(
                     (String) values.get(1), executionCenter.getQuoteCharacter());
 
-            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            ThreadLocal<SimpleDateFormat> threadLocalFormat = ThreadLocal.withInitial(() ->
+                    new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+            SimpleDateFormat sdf = threadLocalFormat.get();
+
+//            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
             result = String.valueOf(DateUtil.getDays(sdf.parse(argumentOne),sdf.parse(argumentTwo)));
         } catch (Exception e) {
