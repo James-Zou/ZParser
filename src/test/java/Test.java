@@ -81,6 +81,7 @@ public class Test {
             System.out.println(eval.execute("DAYTSP(1699515284116,1699516785949,'MI','0')"));
             System.out.println(eval.execute("DATEFORMAT(1700104866156,'yyyy-MM-dd','0')"));
             System.out.println(eval.execute("DATEFORMAT(1501833,'D天H小时M分钟S秒','1')"));
+            System.out.println(eval.execute("PARSEINT('1501833')"));
 
 //        }
   }

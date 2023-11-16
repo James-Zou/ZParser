@@ -51,6 +51,7 @@ public class MathFunctions implements FunctionGroup {
 		functions.add(new SqrtFunction());
 		functions.add(new TanFunction());
 		functions.add(new SumFunction());
+		functions.add(new PARSEINTFunction());
 	}
 
 	public String getName() {

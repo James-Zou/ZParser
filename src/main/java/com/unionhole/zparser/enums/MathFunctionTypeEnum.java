@@ -38,7 +38,8 @@ public enum MathFunctionTypeEnum {
     SIN_FUNCTION("SIN"),//正弦函数
     SQRT_FUNCTION("SQRT"),//平方根函数
     SUM_FUNCTION("SUM"),//平方根函数
-    TAN_FUNCTION("TAN");//正切函数
+    TAN_FUNCTION("TAN"),//正切函数
+    PARSEINT_FUNCTION("PARSEINT");//转整型函数
 
     private String type;
 
