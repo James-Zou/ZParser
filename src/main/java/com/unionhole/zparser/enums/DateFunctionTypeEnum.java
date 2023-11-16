@@ -42,7 +42,8 @@ public enum DateFunctionTypeEnum {
     DAYS_FUNCTION("DAYS"),//获取两个时间的差值
     DAYMS_FUNCTION("DAYMS"),//获取两个时间时分秒的差值
     DAYTS_FUNCTION("DAYTS"),//获取两个时间戳的差值
-    DAYTSP_FUNCTION("DAYTSP");//获取两个时间戳的差值,根据指定单位换算
+    DAYTSP_FUNCTION("DAYTSP"),//获取两个时间戳的差值,根据指定单位换算
+    DATEFORMAT_FUNCTION("DATEFORMAT");//日期格式化函数，可以指定格式进行格式化
 
     private String type;
 

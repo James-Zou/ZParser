@@ -78,6 +78,9 @@ public class Test {
             //算式二：$(变更类型字段编码)=IF($(总得分字段编码)<=2,"一般变更"，"重大变更")
             System.out.println(eval.execute("DAYMILLISMP(1697436777193,20,'M')"));
             System.out.println(eval.execute("DAYTSP(1699515284116,1699516785949,'M','0')"));
+            System.out.println(eval.execute("DAYTSP(1699515284116,1699516785949,'MI','0')"));
+            System.out.println(eval.execute("DATEFORMAT(1700104866156,'yyyy-MM-dd','0')"));
+            System.out.println(eval.execute("DATEFORMAT(1501833,'D天H小时M分钟S秒','1')"));
 
 //        }
   }

@@ -54,6 +54,7 @@ public class DateFunctions implements FunctionGroup {
 		functions.add(new DAYMSFunction());
 		functions.add(new DAYTSFunction());
 		functions.add(new DAYTSPFunction());
+		functions.add(new DATEFORMATFunction());
 	}
 
 	@Override
